@@ -51,14 +51,15 @@
         <li><span>Gatherings</span><span class="ph">[day, time and place]</span></li>
         <li><span>Where we serve</span><span>The Houston and Galveston region, and every place God leads after that.</span></li>
       </ul>
-      <p class="note" style="margin-top:28px">Need prayer instead? The <a href="../get-involved/#pray">prayer request form</a> goes straight to the prayer team.</p>
+      <p class="note" style="margin-top:28px">Need prayer instead? Use the <a href="../get-involved/#pray">prayer request form</a>.</p>
     </div>
     <div class="spot rv">
       <form class="form" data-preview="msg-sent" novalidate>
         <div class="field"><label for="cname">Your name</label><input id="cname" name="name" type="text" autocomplete="name" required></div>
         <div class="field"><label for="cmail">Email or phone</label><input id="cmail" name="contact" type="text" autocomplete="email" required></div>
         <div class="field"><label for="ctopic">What is it about?</label>
-          <select id="ctopic" name="topic"><option>A question about faith</option><option>I need help or someone to talk to</option><option>I want to help or volunteer</option><option>Something else</option></select></div>
+          <select id="ctopic" name="topic"><option>A question about faith</option><option value="help">I need help or someone to talk to</option><option>I want to help or volunteer</option><option>Something else</option></select></div>
+        <p class="note" id="crisis" hidden>If you are in danger or thinking about ending your life, please call or text 988 (Suicide &amp; Crisis Lifeline) or call 911 now.</p>
         <div class="field"><label for="cmsg">Message</label><textarea id="cmsg" name="message" required></textarea></div>
         <button class="btn" type="submit">Send message</button>
         <p class="form__preview">Preview site: this form is not connected yet, so nothing you type here is sent or saved.</p>

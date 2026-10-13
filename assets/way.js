@@ -60,6 +60,11 @@ const lantern = document.querySelector(".lantern");
 const request = document.querySelector("#request");
 request?.addEventListener("input", () => lantern?.classList.toggle("is-lit", request.value.trim().length > 0));
 
+// Contact: show the crisis line when someone says they need help
+const topic = document.getElementById("ctopic");
+const crisis = document.getElementById("crisis");
+topic?.addEventListener("change", () => { crisis.hidden = topic.value !== "help"; });
+
 // Placeholder forms: nothing is sent anywhere until the ministry connects a real inbox
 document.querySelectorAll("form[data-preview]").forEach((form) => {
   form.addEventListener("submit", (e) => {
